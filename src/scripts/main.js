@@ -32,4 +32,7 @@ const getEmployees = function (list) {
   return result;
 };
 
-getEmployees(ul);
+const employeesObjects = (document.createElement('p').textContent =
+  `${JSON.stringify(getEmployees(ul))}`);
+
+body.append(employeesObjects);
